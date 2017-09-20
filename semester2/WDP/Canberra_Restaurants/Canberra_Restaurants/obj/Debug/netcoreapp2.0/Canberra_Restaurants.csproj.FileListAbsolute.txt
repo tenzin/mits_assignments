@@ -1,0 +1,12 @@
+/Users/tenzin/Documents/mits_assignments/semester2/WDP/Canberra_Restaurants/Canberra_Restaurants/bin/Debug/netcoreapp2.0/libe_sqlite3.dylib
+/Users/tenzin/Documents/mits_assignments/semester2/WDP/Canberra_Restaurants/Canberra_Restaurants/bin/Debug/netcoreapp2.0/Canberra_Restaurants.deps.json
+/Users/tenzin/Documents/mits_assignments/semester2/WDP/Canberra_Restaurants/Canberra_Restaurants/bin/Debug/netcoreapp2.0/Canberra_Restaurants.runtimeconfig.json
+/Users/tenzin/Documents/mits_assignments/semester2/WDP/Canberra_Restaurants/Canberra_Restaurants/bin/Debug/netcoreapp2.0/Canberra_Restaurants.runtimeconfig.dev.json
+/Users/tenzin/Documents/mits_assignments/semester2/WDP/Canberra_Restaurants/Canberra_Restaurants/bin/Debug/netcoreapp2.0/Canberra_Restaurants.dll
+/Users/tenzin/Documents/mits_assignments/semester2/WDP/Canberra_Restaurants/Canberra_Restaurants/bin/Debug/netcoreapp2.0/Canberra_Restaurants.pdb
+/Users/tenzin/Documents/mits_assignments/semester2/WDP/Canberra_Restaurants/Canberra_Restaurants/obj/Debug/netcoreapp2.0/Canberra_Restaurants.csprojResolveAssemblyReference.cache
+/Users/tenzin/Documents/mits_assignments/semester2/WDP/Canberra_Restaurants/Canberra_Restaurants/obj/Debug/netcoreapp2.0/Canberra_Restaurants.csproj.CoreCompileInputs.cache
+/Users/tenzin/Documents/mits_assignments/semester2/WDP/Canberra_Restaurants/Canberra_Restaurants/obj/Debug/netcoreapp2.0/Canberra_Restaurants.AssemblyInfoInputs.cache
+/Users/tenzin/Documents/mits_assignments/semester2/WDP/Canberra_Restaurants/Canberra_Restaurants/obj/Debug/netcoreapp2.0/Canberra_Restaurants.AssemblyInfo.cs
+/Users/tenzin/Documents/mits_assignments/semester2/WDP/Canberra_Restaurants/Canberra_Restaurants/obj/Debug/netcoreapp2.0/Canberra_Restaurants.dll
+/Users/tenzin/Documents/mits_assignments/semester2/WDP/Canberra_Restaurants/Canberra_Restaurants/obj/Debug/netcoreapp2.0/Canberra_Restaurants.pdb

@@ -1,5 +1,85 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Banner Title"] = "Restaurants";
 }
+
+<!-- start two col -->
+
+<div class="row">
+    <div class="col-md-6">
+		<p class="oxygen">The Restaurants</p>
+		<p>Whether you're after the tastes of the Mediterranean of some oriental delights, then Canberra has the restaurant for you.</p>
+		<p>Check out what's on offer by checking out our restaurants below.</p>
+    </div>
+    <div class="col-md-6">
+        <p class="oxygen">Customer Reviews</p>
+		<p>If you want to find our more about the restaurants highlighterd below, there's plenty of information to be forund at the customer reviews page.</p> 
+		<p><a asp-area="" asp-controller="Home" asp-action="Reviews">Click here</a> to head to the customer reviews page.</p>
+    </div>
+</div>
+
+<section id="restaurant-lists">
+    <!-- start restaurant item -->
+    <div class="restaurant-item">
+        <div class="row">
+            <div class="col-md-2">
+                <img class="img-responsive" src="~/images/is.jpg" />
+    		</div>
+
+    		<div class="col-md-9 col-md-offset-1">
+                <p class="oxygen">Italian and Sons</p>
+    			<p>"A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola & reggiano. Don't miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel & mustard fruits." - Australian good Food Guide</p>
+    			<p><a href="#">Click Here</a> for the Italian and Sons website.</p>
+    		</div>
+        </div>
+	</div>
+	<!-- end restaurant item -->
+
+    <!-- start restaurant item -->
+    <div class="restaurant-item">
+        <div class="row">
+            <div class="col-md-2">
+                <img class="img-responsive" src="~/images/is.jpg" />
+            </div>
+
+            <div class="col-md-9 col-md-offset-1">
+                <p class="oxygen">Italian and Sons</p>
+                <p>"A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola & reggiano. Don't miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel & mustard fruits." - Australian good Food Guide</p>
+                <p><a href="#">Click Here</a> for the Italian and Sons website.</p>
+            </div>
+        </div>
+    </div>
+    <!-- end restaurant item -->
+
+    <!-- start restaurant item -->
+    <div class="restaurant-item">
+        <div class="row">
+            <div class="col-md-2">
+                <img class="img-responsive" src="~/images/is.jpg" />
+            </div>
+
+            <div class="col-md-9 col-md-offset-1">
+                <p class="oxygen">Italian and Sons</p>
+                <p>"A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola & reggiano. Don't miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel & mustard fruits." - Australian good Food Guide</p>
+                <p><a href="#">Click Here</a> for the Italian and Sons website.</p>
+            </div>
+        </div>
+    </div>
+    <!-- end restaurant item -->
+
+    <!-- start restaurant item -->
+    <div class="restaurant-item">
+        <div class="row">
+            <div class="col-md-2">
+                <img class="img-responsive" src="~/images/is.jpg" />
+            </div>
+
+            <div class="col-md-9 col-md-offset-1">
+                <p class="oxygen">Italian and Sons</p>
+                <p>"A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola & reggiano. Don't miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel & mustard fruits." - Australian good Food Guide</p>
+                <p><a href="#">Click Here</a> for the Italian and Sons website.</p>
+            </div>
+        </div>
+    </div>
+    <!-- end restaurant item -->	
+</section>
+<!-- end two col -->

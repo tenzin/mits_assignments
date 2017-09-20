@@ -1,2 +1,123 @@
-﻿body {
+﻿/*
+*****************************************
+           Main Style
+***************************************/
+.body-content {margin-top:50px;}
+#main-banner .oxygen {
+    padding-top:10px;
+    padding-bottom:10px;
+    color: #fff;
+    border: 2px solid #FFF;
+}
+
+.parallax_scrolling {
+    background-attachment: fixed;
+    background-color: #645862;
+    background-image: url("../images/restaurant_2.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+    cursor: default;
+    text-align: center;
+    padding: 0px;
+}
+
+.dark_background {
+    background-color: rgba(31, 20, 20, 0.6);
+    padding: 40px 0px;
+}
+
+@media (min-width: 992px) {
+    .oxygen {
+        font-family: 'Oxygen', sans-serif;
+        font-size: 28px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+
+    .lato {
+        font-family: 'Lato', sans-serif;
+        font-size: 28px;
+    }
+
+    .niconne {
+        font-family: 'Niconne', cursive;
+        color: #f8bd08;
+        font-size: 65px;
+        font-weight: 400;
+    }
+}
+
+
+/*
+*****************************************
+           Home page
+***************************************/
+#main-banner.home .desc {
+    margin-top:150px;
+    margin-bottom: 150px;
+}
+
+#home-list .dark_background {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#home-list a {color:#f8bd08}
+#home-list a:hover {text-decoration:underline;}
+#home-featured h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: #f8bd08 2px solid;
+    border-bottom: #f8bd08 2px solid;
+    text-align: center;
+}
+
+
+/*
+*****************************************
+           Restaurants page
+***************************************/
+#restaurant-lists {margin-top:30px;}
+.restaurant-item {
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border:black 3px solid;
+}
+
+
+
+/*
+*****************************************
+           Media Query
+***************************************/
+@media (min-width: 768px) {
+    .oxygen {
+        font-family: 'Oxygen', sans-serif;
+        font-size: 22px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+
+    .lato {
+        font-family: 'Lato', sans-serif;
+        font-size: 22px;
+    }
+
+    .niconne {
+        font-family: 'Niconne', cursive;
+        color: #f8bd08;
+        font-size: 50px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 767px) {
+    #main-banner.home .desc {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
