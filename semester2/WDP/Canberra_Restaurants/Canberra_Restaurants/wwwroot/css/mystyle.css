@@ -1,7 +1,4 @@
-﻿/*
-*****************************************
-           Main Style
-***************************************/
+﻿/* Start stylesheet */
 .body-content {margin-top:50px;}
 #main-banner .oxygen {
     padding-top:10px;
@@ -50,10 +47,7 @@
 }
 
 
-/*
-*****************************************
-           Home page
-***************************************/
+/* For Home Page */
 #main-banner.home .desc {
     margin-top:150px;
     margin-bottom: 150px;
@@ -76,10 +70,7 @@
 }
 
 
-/*
-*****************************************
-           Restaurants page
-***************************************/
+/* For Restaurants Page */
 #restaurant-lists {margin-top:30px;}
 .restaurant-item {
     padding: 15px;
@@ -88,14 +79,98 @@
     border:black 3px solid;
 }
 
+/*For Dishes Page*/
+.wagwep-container ul#portfolio-filter {
+    text-align: center;
+}
+
+.wagwep-container ul#portfolio-filter li.current a {
+     background-color: #337ab7;
+     font-weight: normal;
+}
+
+nav#porfolio-nav li {
+    display: inline-block;
+    float: none !important;
+}
+
+.og-grid li {
+    width: 30%;
+}
+
+.og-grid li a figure span {
+    font-size: 18px;
+    border-bottom: 0;
+}
+
+.og-grid li a figure span .btn-primary {
+     width: 150px;
+     margin: auto;
+     font-size: 14px;
+     bottom: 20%;
+     left: 0;
+     right: 0;
+     position: absolute;
+}
+
+.og-grid li > a, .og-grid li > a img {
+     width: 100%;
+}
+
+.og-expander {
+    z-index: 999;
+}
+
+.og-details .btn-primary, .elastislide-horizontal, .og-details .infosep {
+    display: none;
+}
+
+.og-details a.link-button {
+    background: #337ab7;
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.og-details a.link-button:hover {
+    background: #286090;
+    text-decoration: none;
+}
 
 
-/*
-*****************************************
-           Media Query
-***************************************/
+/** For Prices page */
+#prices .prices-buttons a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#prices .prices-buttons a.active {
+    background: #337ab7;
+    color: #fff;
+}
+
+#prices .prices-list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.prices-list .row {
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+
+.gm-style img.img-responsive {width:100% !important;}
+
+
+/* For Media Query */
 @media (min-width: 768px) {
-    .oxygen {
+    .oxygen; {
         font-family: 'Oxygen', sans-serif;
         font-size: 22px;
         letter-spacing: 5px;

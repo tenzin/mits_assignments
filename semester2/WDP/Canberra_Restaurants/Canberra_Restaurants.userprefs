@@ -1,14 +1,5 @@
 ﻿<Properties StartupConfiguration="{D4395B9E-B949-4B31-A740-7B9F1FDF07F9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Canberra_Restaurants/Views/Home/Dishes.cshtml">
-    <Files>
-      <File FileName="Canberra_Restaurants/Views/Home/Index.cshtml" Line="8" Column="45" />
-      <File FileName="Canberra_Restaurants/Views/Home/Restaurants.cshtml" Line="39" Column="1" />
-      <File FileName="Canberra_Restaurants/wwwroot/css/mystyle.css" Line="121" Column="25" />
-      <File FileName="Canberra_Restaurants/Views/Shared/_Layout.cshtml" Line="41" Column="13" />
-      <File FileName="Canberra_Restaurants/Views/Home/Cuisine.cshtml" Line="5" Column="1" />
-      <File FileName="Canberra_Restaurants/Views/Home/Dishes.cshtml" Line="18" Column="11" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
