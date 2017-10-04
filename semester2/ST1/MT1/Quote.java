@@ -129,9 +129,9 @@ public class Quote
         
         //Calculate insurance
         if(sInsurance) {
-            sNearestMillion = (int) Math.round(sPayloadVal / 1000000d);
+            sNearestMillion = (int) Math.ceil(sPayloadVal / 1000000d); //calculate to the upper million value
             //System.out.println("****insurance near million = " + sNearestMillion);
-            sCostInsurance = sl.getPrice("ILLOYDS") * sNearestMillion; //We can use sl.getCost("ILLOYDS") to get the insurance price
+            sCostInsurance = sl.getPrice("ILLOYDS") * sNearestMillion;
         }
         else {
             sCostInsurance = 0;

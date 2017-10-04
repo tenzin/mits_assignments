@@ -1,11 +1,12 @@
 import java.text.NumberFormat;
 import java.text.DecimalFormat;
+import java.awt.Font;
+import java.awt.Color;
 
 public class displayQuote
 {
     // instance variables - replace the example below with your own
     //private int x;
-    NumberFormat numberFormat = new DecimalFormat("#,###");
 
     /**
      * Constructor for objects of class displayQuote
@@ -26,55 +27,139 @@ public class displayQuote
         // ---------- students ----------- Put your code here 
         //
         //   System.out.printf("------------------------------------------\n");
+        
+        NumberFormat numberFormat = new DecimalFormat("#,###"); //To format the output numbers with commas
+        
+        String temp;
+        int lineCounter;
+        //Initialize UCCanvas to do output on canpus
+        UCCanvas can = new UCCanvas("SpaceY Quote", 500, 600);
+        can.setForegroundColor(new Color(2, 89, 82));
+        can.fillRectangle(0,0,500,600);
+        can.setForegroundColor(Color.WHITE);
+        can.fillRectangle(20,20,500-40,600-40);
+        Font font = new Font("Courier New", Font.BOLD, 14);
+        can.setFont(font);
+        can.setForegroundColor(new Color(40, 89, 168));
+        can.drawString("SPACEY QUOTE", 180, 50);
+        can.drawString("-------------", 180, 60);
+        lineCounter = 100;
      
         System.out.println("-------------------------------------------");
         System.out.println("SpaceY Quotation System");
         System.out.println("-------------------------------------------");
      
-        System.out.printf("%-24s%s%s\n", "Service code", ": ", q.getCode());
-        System.out.printf("%-24s%s%s\n", "Number of Launches", ": ", q.getNum());
-        if(q.getOrbit() != null) //Check if we need to display orbit or not
-            System.out.printf("%-24s%s%s\n", "Orbit Type", ": ", q.getOrbit());
+        temp = String.format("%-24s%s%s", "Service code", ":", q.getCode());
+        System.out.println(temp);
+        can.drawString(temp, 75, lineCounter);
+        lineCounter += 20;
+        
+        temp = String.format("%-24s%s%s", "Number of Launches", ":", q.getNum());
+        System.out.println(temp);
+        can.drawString(temp, 75, lineCounter);
+        lineCounter += 20;
+        
+        if(q.getOrbit() != null) { //Check if we need to display orbit or not
+            temp = String.format("%-24s%s%s", "Orbit Type", ":", q.getOrbit());
+            System.out.println(temp);
+            can.drawString(temp, 75, lineCounter);
+            lineCounter += 20;
+        }
      
         if(!q.getManned()) {
-            System.out.printf("%-24s%s%s\n", "Nitrogen Flush", ": ", yn(q.getNitrogen()));
-            System.out.printf("%-24s%s%s\n", "Insurance", ": ", yn(q.getInsurance()));
-            if(q.getInsurance())
-                System.out.printf("%-24s%s%13s\n", "Payload Value", ":$", numberFormat.format(q.getPayloadVal()));
+            temp = String.format("%-24s%s%s", "Nitrogen Flush", ":", yn(q.getNitrogen()));
+            System.out.println(temp);
+            can.drawString(temp, 75, lineCounter);
+            lineCounter += 20;
+            
+            temp = String.format("%-24s%s%s", "Insurance", ":", yn(q.getInsurance()));
+            System.out.println(temp);
+            can.drawString(temp, 75, lineCounter);
+            lineCounter += 20;
+            
+            if(q.getInsurance()) {
+                temp = String.format("%-24s%s%12s", "Payload Value", ":$", numberFormat.format(q.getPayloadVal()));
+                System.out.println(temp);
+                can.drawString(temp, 75, lineCounter);
+                lineCounter += 20;
+            }
         }
         
         System.out.println("-------------------------------------------");
-        System.out.printf("%-24s%s%13s\n", "Base Price", ":$", numberFormat.format(q.getCost()));
-        System.out.printf("%-24s%s%13s\n", "Base Price * Launches",":$", numberFormat.format(q.getCostByNum()));
+        can.drawString("---------------------------", 150, lineCounter);
+        lineCounter += 20;
+        
+        temp = String.format("%-24s%s%12s", "Base Price", ":$", numberFormat.format(q.getCost()));
+        System.out.println(temp);
+        can.drawString(temp, 75, lineCounter);
+        lineCounter += 20;
+        
+        temp = String.format("%-24s%s%12s", "Base Price * Launches",":$", numberFormat.format(q.getCostByNum()));
+        System.out.println(temp);
+        can.drawString(temp, 75, lineCounter);
+        lineCounter += 20;
         
         if(q.getDiscount() > 0) {
-            System.out.printf("%-24s%s%13s\n", "Discount 2%", ":$", numberFormat.format(q.getDiscount()));
+            temp = String.format("%-24s%s%12s", "Discount 2%", ":$", numberFormat.format(q.getDiscount()));
+            System.out.println(temp);
+            can.drawString(temp, 75, lineCounter);
+            lineCounter += 20;
         }
         
         if(q.getNitrogen()) {
-            System.out.printf("%-24s%s%13s\n", "Nitrogen * Launches", ":$", numberFormat.format(q.getCostNitrogen()));
+            temp = String.format("%-24s%s%12s", "Nitrogen * Launches", ":$", numberFormat.format(q.getCostNitrogen()));
+            System.out.println(temp);
+            can.drawString(temp, 75, lineCounter);
+            lineCounter += 20;
         }
         
-        System.out.printf("%-24s%s%13s\n", "Gross Launch Cost", ":$", numberFormat.format(q.getCostGross()));
+        temp = String.format("%-24s%s%12s", "Gross Launch Cost", ":$", numberFormat.format(q.getCostGross()));
+        System.out.println(temp);
+        can.drawString(temp, 75, lineCounter);
+        lineCounter += 20;
         
         if(q.getTax() > 0) {
-            System.out.printf("%-24s%s%13s\n", "Tax @ 3%", ":$", numberFormat.format(q.getTax()));
+            temp = String.format("%-24s%s%12s", "Tax @ 3%", ":$", numberFormat.format(q.getTax()));
+            System.out.println(temp);
+            can.drawString(temp, 75, lineCounter);
+            lineCounter += 20;
         }
         
-        System.out.printf("%-24s%s%13s\n", "Nett Launch Cost", ":$", numberFormat.format(q.getCostNett()));
+        temp = String.format("%-24s%s%12s", "Nett Launch Cost", ":$", numberFormat.format(q.getCostNett()));
+        System.out.println(temp);
+        can.drawString(temp, 75, lineCounter);
+        lineCounter += 20;
         
-        if(q.getCostNesa() > 0)
-            System.out.printf("%-24s%s%13s\n", "NESA Tracking", ":$", numberFormat.format(q.getCostNesa()));
+        if(q.getCostNesa() > 0) {
+            temp = String.format("%-24s%s%12s", "NESA Tracking", ":$", numberFormat.format(q.getCostNesa()));
+            System.out.println(temp);
+            can.drawString(temp, 75, lineCounter);
+            lineCounter += 20;
+        }
         
-        if(!q.getManned())
-            System.out.printf("%-24s%s%13s\n", "Payload Value", ":$", numberFormat.format(q.getPayloadVal()));
+        if(!q.getManned() && q.getInsurance()) {
+            temp = String.format("%-24s%s%12s", "Payload Value", ":$", numberFormat.format(q.getPayloadVal()));
+            System.out.println(temp);
+            can.drawString(temp, 75, lineCounter);
+            lineCounter += 20;
+        }
         
         if(q.getInsurance()) {
-            System.out.printf("%-24s%s%13s\n", "Insurance", ":$", numberFormat.format(q.getCostInsurance()));
+            temp = String.format("%-24s%s%12s", "Insurance", ":$", numberFormat.format(q.getCostInsurance()));
+            System.out.println(temp);
+            can.drawString(temp, 75, lineCounter);
+            lineCounter += 20;
         }
         
         System.out.println("-------------------------------------------");
-        System.out.printf("%-24s%s%13s\n", "Total Amount Due", ":$", numberFormat.format(q.getCostInvoice()));
+        can.drawString("---------------------------", 150, lineCounter);
+        lineCounter += 20;
+        
+        temp = String.format("%-24s%s%12s", "Total Amount Due", ":$", numberFormat.format(q.getCostInvoice()));
+        System.out.println(temp);
+        can.drawString(temp, 75, lineCounter);
+        lineCounter += 20;
+        
         System.out.println("-------------------------------------------");
      
     }
