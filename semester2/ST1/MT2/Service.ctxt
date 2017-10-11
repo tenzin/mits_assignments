@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Service
+comment0.text=\n\ Service\ Class\ for\ ST1\ Marked\ tutorial\ 2\n\ It\ is\ a\ model\ class\n\ @author\ tenzin\n\ @version\ 0.1\n
+comment1.params=code\ codeDesc\ price\ orbit\ manned
+comment1.target=Service(java.lang.String,\ java.lang.String,\ double,\ java.lang.String[],\ java.lang.String)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Service\n
+comment2.params=
+comment2.target=java.lang.String\ getCode()
+comment2.text=\n\ Getter\ Methods\n
+comment3.params=
+comment3.target=java.lang.String\ getCodeDesc()
+comment4.params=
+comment4.target=double\ getPrice()
+comment5.params=
+comment5.target=java.lang.String[]\ getOrbit()
+comment6.params=
+comment6.target=java.lang.String\ getManned()
+comment7.params=
+comment7.target=int\ getNumOrbit()
+numComments=8

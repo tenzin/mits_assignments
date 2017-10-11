@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=InputQuote
+comment0.text=\n\ Write\ a\ description\ of\ class\ InputQuote\ here.\n\n\ @author\ RC\n\ @version\ 12/9/2017\n
+comment1.params=
+comment1.target=InputQuote()
+comment2.params=sl\ cl
+comment2.target=Quote\ getQuote(ServiceList,\ CustomerList)
+comment3.params=s
+comment3.target=boolean\ isPositiveInteger(java.lang.String)
+comment4.params=sArray\ s
+comment4.target=boolean\ contains(java.lang.String[],\ java.lang.String)
+comment4.text=\n\ Function\ to\ check\ whether\ a\ string\ equals\ an\ element\ in\ an\ array\ of\ string\n
+numComments=5
