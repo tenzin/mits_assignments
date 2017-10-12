@@ -28,6 +28,7 @@ public class ServiceList
                     Double.parseDouble(temp[2].trim()), temp[3].split("\\Q|\\E"), temp[4].trim());
                 numServices++; //When accessing Customer array, highest index will be numCustomers - 1, since its incremented here one more
             }
+            in.close();
         }
         catch (IOException e) {
             System.out.println ("Error reading Customer File");

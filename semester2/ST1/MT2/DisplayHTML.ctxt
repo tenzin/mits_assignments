@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=DisplayHTML
+comment1.params=input\ counter
+comment1.target=DisplayHTML(java.lang.String[],\ int)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ DisplayHTML\n
+comment2.params=
+comment2.target=void\ display()
+comment2.text=\n\ Method\ to\ Write\ HTML\ file\n
+numComments=3

@@ -30,6 +30,7 @@ public class CustomerList
                 customers[numCustomers] = new Customer(temp[0].trim(), temp[1].trim(), temp[2].trim(), Double.parseDouble(temp[3].trim()));
                 numCustomers++; //When accessing Customer array, highest index will be numCustomers - 1, since its incremented here one more
             }
+            in.close();
         }
         catch (IOException e) {
             System.out.println ("Error reading Customer File");

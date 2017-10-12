@@ -32,11 +32,11 @@ public class InputQuote
         //Get client ID
         System.out.print("Enter Client ID:");
         s = in.nextLine();
-        s = s.trim();
+        s = s.trim().toUpperCase();
         while(!cl.validateCustomerCode(s)) {
             System.out.println("Error: Invalid Customer ID");
             System.out.print("Enter Customer ID:");
-            s = in.nextLine();
+            s = in.nextLine().trim().toUpperCase();
         }
         q.setCustId(s);
         q.setCustname(cl.getName(s));
@@ -44,11 +44,11 @@ public class InputQuote
         // Enter service code
         System.out.print("Enter Service Code:");
         s = in.nextLine();
-        s = s.trim();
+        s = s.trim().toUpperCase();
         while(!sl.validateServiceCode(s)) {
             System.out.println("Error: Invalid Code");
             System.out.print("Enter Service Code:");
-            s = in.nextLine();
+            s = in.nextLine().trim().toUpperCase();
         }
         q.setCode(s);
         
@@ -86,13 +86,13 @@ public class InputQuote
             String orbitListText = "";
             for (int i = 0; i < orbitList.length; i++)
                 orbitListText = orbitListText + " " + orbitList[i];
-            System.out.print("Enter Choice of Orbit. Valid choices are" + orbitListText+":");
+            System.out.print("Enter Choice of Orbit. Valid choices are" + orbitListText + ":");
             s = in.nextLine();
             s = s.toUpperCase().trim();
             // Check if the input string is valid choice of orbit or not
             while(!contains(orbitList, s)) {
                 System.out.println("Error in Choice of Orbit.");
-                System.out.print("Enter Choice of Orbit. Valid choices are: " + orbitListText);
+                System.out.print("Enter Choice of Orbit. Valid choices are" + orbitListText + ":");
                 s = in.nextLine();
                 s = s.toUpperCase().trim();
             }

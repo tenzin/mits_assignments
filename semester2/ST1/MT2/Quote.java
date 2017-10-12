@@ -132,7 +132,7 @@ public class Quote
         sCostInvoice = sCostNett + sCostNesa + sCostInsurance;
         
         //Now do the credit check
-        if(sCostInvoice > cl.getCredit(sCustId)) {sCredit = "WARNING CLIENT HAS EXCEEDED CREDIT LIMIT";}
+        if(sCostInvoice > cl.getCredit(sCustId)) {sCredit = "CREDIT LIMIT EXCEEDED!";}
         else {sCredit = null;}
         
     }
