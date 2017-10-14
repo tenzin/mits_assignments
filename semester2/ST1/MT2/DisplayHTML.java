@@ -25,8 +25,8 @@ public class DisplayHTML
             htmlBody[i] = input[i];
         }
         
-        htmlHeader = "<DOCTYPE=html>\n<html>\n<body>\n<h1>Space Y Quote V2</h2>\n<h1>-------------------------------------</h1>\n<font face=\"Courier New\">";
-        htmlFooter = "</font>\n</body>\n</html>";
+        htmlHeader = "<DOCTYPE=html>\n<html>\n<body>\n<h2>Space Y Quote V2</h2>\n<h3>-------------------------------------</h3>\n<font face=\"Courier New\">\n<pre>\n";
+        htmlFooter = "</pre>\n</font>\n</body>\n</html>";
     }
     
 
@@ -39,7 +39,7 @@ public class DisplayHTML
             BufferedWriter out = new BufferedWriter(new FileWriter("spacey_quotation.html"));
             out.write(htmlHeader);
             for (int i = 0; i < bodyLineCount; i++) {
-                out.write("<p>"+htmlBody[i]+"</p>"+"\n");
+                out.write(htmlBody[i] + "\n");
             }
             out.write(htmlFooter);
             out.close();
