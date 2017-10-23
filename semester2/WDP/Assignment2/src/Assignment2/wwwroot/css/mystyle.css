@@ -1,0 +1,229 @@
+﻿/* Start stylesheet */
+.body-content {margin-top:50px;}
+#main-banner .oxygen {
+    padding-top:10px;
+    padding-bottom:10px;
+    color: #fff;
+    border: 2px solid #FFF;
+}
+
+.parallax_scrolling {
+    background-attachment: fixed;
+    background-color: #645862;
+    background-image: url("../images/restaurant_2.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+    cursor: default;
+    text-align: center;
+    padding: 0px;
+}
+
+.dark_background {
+    background-color: rgba(31, 20, 20, 0.6);
+    padding: 40px 0px;
+}
+
+@media (min-width: 992px) {
+    .oxygen {
+        font-family: 'Oxygen', sans-serif;
+        font-size: 28px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+
+    .lato {
+        font-family: 'Lato', sans-serif;
+        font-size: 28px;
+    }
+
+    .niconne {
+        font-family: 'Niconne', cursive;
+        color: #f8bd08;
+        font-size: 65px;
+        font-weight: 400;
+    }
+}
+
+#main-banner.user-log {display:none;}
+
+/* Buttons */
+.btn-r {
+    color:#fff !important;
+    padding:5px 8px;
+}
+.btn-r:hover {opacity:0.7;}
+.bblue {background:#7FDCEF;}
+.bred {background:#D13638;}
+.bgreen {background:#50DB46;}
+h2.bor {
+    font-family: 'Oxygen', sans-serif;
+    font-size:24px;
+    text-transform: uppercase;
+    border-top:#f8bd08 2px solid;
+    border-bottom:#f8bd08 2px solid;
+    margin: 30px 0 20px 0;
+    padding:5px 0;
+}
+
+
+/* For Home Page */
+#main-banner.home .desc {
+    margin-top:150px;
+    margin-bottom: 150px;
+}
+
+#home-list .dark_background {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#home-list a {color:#f8bd08}
+#home-list a:hover {text-decoration:underline;}
+#home-featured h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: #f8bd08 2px solid;
+    border-bottom: #f8bd08 2px solid;
+    text-align: center;
+}
+
+
+/* For Restaurants Page */
+#restaurant-lists {margin-top:30px;}
+.restaurant-item {
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border:black 3px solid;
+}
+
+/*For Dishes Page*/
+.wagwep-container ul#portfolio-filter {
+    text-align: center;
+}
+
+.wagwep-container ul#portfolio-filter li.current a {
+     background-color: #337ab7;
+     font-weight: normal;
+}
+
+nav#porfolio-nav li {
+    display: inline-block;
+    float: none !important;
+}
+
+.og-grid li {
+    width: 30%;
+}
+
+.og-grid li a figure span {
+    font-size: 18px;
+    border-bottom: 0;
+}
+
+.og-grid li a figure span .btn-primary {
+     width: 150px;
+     margin: auto;
+     font-size: 14px;
+     bottom: 20%;
+     left: 0;
+     right: 0;
+     position: absolute;
+}
+
+.og-grid li > a, .og-grid li > a img {
+     width: 100%;
+}
+
+.og-expander {
+    z-index: 999;
+}
+
+.og-details .btn-primary, .elastislide-horizontal, .og-details .infosep {
+    display: none;
+}
+
+.og-details a.link-button {
+    background: #337ab7;
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.og-details a.link-button:hover {
+    background: #286090;
+    text-decoration: none;
+}
+
+
+/** For Prices page */
+#prices .prices-buttons a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#prices .prices-buttons a.active {
+    background: #337ab7;
+    color: #fff;
+}
+
+#prices .prices-list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.prices-list .row {
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+
+.gm-style img.img-responsive {width:100% !important;}
+
+/* Reviews page */
+#submit-review {margin-top:20px;}
+#reviews, #reviews li {list-style:none;}
+#reviews li {
+    border-bottom: #f8bd08 2px solid;
+    padding: 20px 0;
+}
+#reviews p.ratings span {font-size:18px;}
+#reviews .user-buttons .btn {margin-top:5px; margin-bottom:5px;}
+
+
+/* For Media Query */
+@media (min-width: 768px) {
+    .oxygen; {
+        font-family: 'Oxygen', sans-serif;
+        font-size: 22px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+
+    .lato {
+        font-family: 'Lato', sans-serif;
+        font-size: 22px;
+    }
+
+    .niconne {
+        font-family: 'Niconne', cursive;
+        color: #f8bd08;
+        font-size: 50px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 767px) {
+    #main-banner.home .desc {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}

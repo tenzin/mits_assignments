@@ -1,0 +1,239 @@
+﻿@{
+    ViewData["Banner Title"] = "Restaurant Location";
+}
+
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAfVmuyMPuoIjaLeSRVtgWTpxadlfnAaDw"></script>
+
+<script>
+    // Declare a variable for map
+    var map;
+    // Get lattitude and longitude of Canberra Centre
+    var canberraCentre = new google.maps.LatLng(-35.2792284, 149.132313);
+
+    // Initialise the map
+    function initMap() {
+        // Define the properties for Canberra Centre map
+        var canberraMap = {
+            center: canberraCentre,
+            zoom: 13,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        // Create a map object for Canberra Centre 
+        // using canberraMap and the <div> element with id="googleMap"
+        map = new google.maps.Map(
+                  document.getElementById("googleMap"), canberraMap);
+
+        // Add markers below this line
+        addItalianSons(map);
+        addJamiesItalian(map);
+        addChairmanYip(map);
+        addDicksonNoodleHouse(map);
+        addBluGinger(map);
+        addjewelOfIndia(map);
+    }
+
+    //Function to plot Italian and Sons
+    function addItalianSons(map) {
+        
+        var italianSons = 
+            new google.maps.LatLng(-35.2750109,149.13228879999997);
+        var markerItalianSons = new google.maps.Marker({ 
+            position: italianSons,
+        });
+
+        markerItalianSons.setMap(map);
+
+        var contentItalianSons =
+        '<div class="restaurant-item row">'+
+            '<h2 class="col-xs-12">Italian and Sons</h2>'+
+            '<div class="col-md-3">'+
+                '<img class="img-responsive" src="../images/is_logo.gif" />'+
+            '</div>'+
+            '<div class="col-md-9">'+
+                '<p>“A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola & reggiano. Don’t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel & mustard fruits” – Australian good Food Guide</p>'+
+                '<p><a href="https://italianandsons.com.au/" target="_blank">Click Here</a> for the Italian and Sons website.</p>'+
+            '</div>'+
+        '</div>';
+
+        var infoItalianSons = new google.maps.InfoWindow({
+            content: contentItalianSons
+        });
+
+        google.maps.event.addListener(markerItalianSons, 'click', 
+        function () {
+            infoItalianSons.open(map, markerItalianSons);
+        });
+    }
+    
+    //Function to plot Jamie's Italian
+    function addJamiesItalian(map) {
+        
+        var jamiesItalian = 
+            new google.maps.LatLng(-35.27775,149.13279009999997);
+        var markerJamiesItalian = new google.maps.Marker({ 
+            position: jamiesItalian,
+        });
+
+        markerJamiesItalian.setMap(map);
+
+        var contentJamiesItalian =
+        '<div class="restaurant-item row">'+
+            '<h2 class="col-xs-12">Jamie\’s Italian</h2>'+
+            '<div class="col-md-3">'+
+                '<img class="img-responsive" src="../images/jamie_logo.png" />'+
+            '</div>'+
+            '<div class="col-md-9">'+
+                '<p>“With prime position in the Canberra Centre on Bunda Street, Jamie’s Italian is the perfect place for a mid-shopping pit stop, or a buzzing evening out. With beautiful room-height windows and impressive lofty ceilings, the restaurant is full of atmosphere” – Jamie\’s Italian Website</p>'+
+                '<p><a href="https://www.jamieoliver.com/italian/australia/restaurants/canberra/" target="_blank">Click Here</a> for the Jamie\’s Italian Canberra website.</p>'+
+            '</div>'+
+        '</div>';
+
+        var infoJamies = new google.maps.InfoWindow({
+            content: contentJamiesItalian
+        });
+
+        google.maps.event.addListener(markerJamiesItalian, 'click', 
+        function () {
+            infoJamies.open(map, markerJamiesItalian);
+        });
+    }
+
+    //Function to plot Chairman & Yip
+    function addChairmanYip(map) {
+        
+        var chairmanYip = 
+            new google.maps.LatLng(-35.3116566,149.13394370000003);
+        var markerChairmanYip = new google.maps.Marker({ 
+            position: chairmanYip,
+        });
+
+        markerChairmanYip.setMap(map);
+
+        var contentChairmanYip =
+        '<div class="restaurant-item row">'+
+            '<h2 class="col-xs-12">Chairman & Yip</h2>'+
+            '<div class="col-md-3">'+
+                '<img class="img-responsive" src="../images/chairman_logo.png" />'+
+            '</div>'+
+            '<div class="col-md-9">'+
+                '<p>“The Chairman & Yip has become one of Canberra\’s longest standing and most highly regarded institutions, having received numerous awards over the years, offering an ever consistent and professional quality of service for corporate dining, conferences and presentations.” – Chairman & Yip Website</p>'+
+                '<p><a href="http://chairmangroup.com.au/chairmanyip/" target="_blank">Click Here</a> for the Chairman & Yip website.</p>'+
+            '</div>'+
+        '</div>';
+
+        var infoChairmanYip = new google.maps.InfoWindow({
+            content: contentChairmanYip
+        });
+
+        google.maps.event.addListener(markerChairmanYip, 'click', 
+        function () {
+            infoChairmanYip.open(map, markerChairmanYip);
+        });
+    }
+
+    //Function to plot Dickson Noodle House
+    function addDicksonNoodleHouse(map) {
+        
+        var dicksonNoodleHouse = 
+            new google.maps.LatLng(-35.250413,149.13628500000004);
+        var markerDicksonNoodleHouse = new google.maps.Marker({ 
+            position: dicksonNoodleHouse,
+        });
+
+        markerDicksonNoodleHouse.setMap(map);
+
+        var contentDicksonNoodleHouse =
+        '<div class="restaurant-item row">'+
+            '<h2 class="col-xs-12">Dickson Asian Noodle House</h2>'+
+            '<div class="col-md-3">'+
+                '<img class="img-responsive" src="../images/noodle_logo.jpg" />'+
+            '</div>'+
+            '<div class="col-md-9">'+
+                '<p>“The Dickson Asian Noodle House specialises in traditional Malaysian, Thai and Lao cuisine. The dining atmosphere is causal and cosy providing for a la carte dining, banquets and take away” – Vibe FM Website</p>'+
+                '<p><a href="https://www.facebook.com/pages/Dickson-Asian-Noodle-House/156690017692038" target="_blank">Click Here</a> for the Dickson Asian Noodle House Facebook page.</p>'+
+            '</div>'+
+        '</div>';
+
+        var infoDicksonNoodleHouse = new google.maps.InfoWindow({
+            content: contentDicksonNoodleHouse
+        });
+
+        google.maps.event.addListener(markerDicksonNoodleHouse, 'click', 
+        function () {
+            infoDicksonNoodleHouse.open(map, markerDicksonNoodleHouse);
+        });
+    }
+
+    //Function to plot Blu Ginger
+    function addBluGinger(map) {
+        
+        var bluGinger = 
+            new google.maps.LatLng(-35.2773568,149.13202120000005);
+        var markerBluGinger = new google.maps.Marker({ 
+            position: bluGinger,
+        });
+
+        markerBluGinger.setMap(map);
+
+        var contentBluGinger =
+        '<div class="restaurant-item row">'+
+            '<h2 class="col-xs-12">Blu Ginger</h2>'+
+            '<div class="col-md-3">'+
+                '<img class="img-responsive" src="../images/bluginger_logo.png" />'+
+            '</div>'+
+            '<div class="col-md-9">'+
+                '<p>“At Blu Ginger we use only the freshest locally sourced produce, combined with authentic spices imported directly from the sub-continent, to offer classic, traditional recipes with a modern twist, creating a unique and memorable dining experience for you.” – Blu Ginger Website</p>'+
+                '<p><a href="http://www.bluginger.com.au/" target="_blank">Click Here</a> for the Blu Ginger website.</p>'+
+            '</div>'+
+        '</div>';
+
+        var infoBluGinger = new google.maps.InfoWindow({
+            content: contentBluGinger
+        });
+
+        google.maps.event.addListener(markerBluGinger, 'click', 
+        function () {
+            infoBluGinger.open(map, markerBluGinger);
+        });
+    }
+
+    //Function to plot Jewel of India
+    function addjewelOfIndia(map) {
+        
+        var jewelOfIndia = 
+            new google.maps.LatLng(-35.3207292,149.13273070000002);
+        var markerJewelOfIndia = new google.maps.Marker({ 
+            position: jewelOfIndia,
+        });
+
+        markerJewelOfIndia.setMap(map);
+
+        var contentJewelOfIndia =
+        '<div class="restaurant-item row">'+
+            '<h2 class="col-xs-12">Jewel of India</h2>'+
+            '<div class="col-md-3">'+
+                '<img class="img-responsive" src="../images/jewel_logo.jpg" />'+
+            '</div>'+
+            '<div class="col-md-9">'+
+                '<p>“Finding a balance between dishes inspired by authentic recipes and creating a modern take on classic cuisine sees a loyal following of Canberra locals returning for a mouth-watering feast.” – Australian Good Food Guide Website</p>'+
+                '<p><a href="http://jewelofindia.com.au/" target="_blank">Click Here</a> for the Jewel of India website.</p>'+
+            '</div>'+
+        '</div>';
+
+        var infoJewelIndia = new google.maps.InfoWindow({
+            content: contentJewelOfIndia
+        });
+
+        google.maps.event.addListener(markerJewelOfIndia, 'click', 
+        function () {
+            infoJewelIndia.open(map, markerJewelOfIndia);
+        });
+    }
+
+    // Add a DOM listener that will execute the initMap function 
+    // on window load (when the page is loaded)
+    google.maps.event.addDomListener(window, 'load', initMap);   
+</script>
+
+<div id="googleMap" style="width:100%;height:800px;margin-top:-50px;"></div> 

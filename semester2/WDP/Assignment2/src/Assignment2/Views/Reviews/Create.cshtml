@@ -1,0 +1,74 @@
+@model Assignment2.Models.Reviews
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<hr />
+<section class="row">
+    <form asp-action="Create" class="col-md-6">
+        <div class="form-horizontal">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Date" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="Date" class="form-control" readonly />
+                    <span asp-validation-for="Date" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="Name" class="form-control" value="@User.Identity.Name" readonly />
+                    <span asp-validation-for="Name" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Heading" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="Heading" class="form-control" />
+                    <span asp-validation-for="Heading" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Restaurant" class="col-md-2 control-label">Restaurant</label>
+                <div class="col-md-10">
+                    <select asp-for="Restaurant" class="form-control">
+                        <option value="">Select a Restaurant</option>
+                        <option value="Italian and Sons">Italian and Sons</option>
+                        <option value="Jamie's Italian">Jamie's Italian</option>
+                        <option value="Chairman & Yip">Chairman & Yip</option>
+                        <option value="Dickson Asian Noodle House">Dickson Asian Noodle House</option>
+                        <option value="Blu Ginger">Blu Ginger</option>
+                        <option value="Jewel of India">Jewel of India</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Comments" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <textarea asp-for="Comments" class="form-control" style="height:150px"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rating" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="Rating" class="form-control" />
+                    <span asp-validation-for="Rating" class="text-danger" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+        <div>
+            <a asp-area="" asp-controller="Home" asp-action="Reviews">Back to List</a>
+        </div>
+    </form>
+</section>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

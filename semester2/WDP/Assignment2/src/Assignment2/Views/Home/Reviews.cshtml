@@ -1,0 +1,90 @@
+﻿
+﻿@model IEnumerable<Assignment2.Models.Reviews>
+
+@{
+    ViewData["Banner Title"] = "Customer Reviews";
+}
+
+<section class="inner-content row">
+    <div class="col-md-5 col-md-offset-1">
+        <p class="oxygen">Be The Critic</p>
+        <p>have you been to a restaurant recently and loved it or loathed it? Then tell us about it.</p>
+        <p>Find your inner restaurant critic and create an account to review your recent dining experience.</p>
+    </div>
+
+    <div class="col-md-5">
+        <div class="col-xs-6">
+            <img class="img-responsive" src="~/images/burger.jpg" />
+        </div>
+        <div class="col-xs-6">
+            <img class="img-responsive" src="~/images/pasta.jpg" />
+        </div>
+    </div>
+
+    <div class="col-md-11 col-md-offset-1">
+        @{
+            if (User.IsInRole("Manager") || User.IsInRole("User"))
+            {
+                <a asp-area="" asp-controller="Reviews" asp-action="Create" id="submit-review" class="btn btn-r bblue">Submit a Review</a>
+            }
+            else
+            {
+                <p>Please <a asp-area="" asp-controller="Account" asp-action="Login">log in</a> or <a asp-area="" asp-controller="Account" asp-action="Register">create an account</a> to review a restaurant.</p>
+            }
+        }
+    </div>
+
+    <section class="col-md-offset-1 col-md-11">
+        <ul id="reviews">
+            @{
+                int index = 1;
+                @foreach (var item in Model)
+            {
+                    <li class="review-items">
+                        <h4> @Html.DisplayFor(modelItem => item.Heading) </h4>
+                        <strong class="restaurant">&#64; @Html.DisplayFor(modelItem => item.Restaurant)</strong>
+                        <p class="ratings">
+                            @{int iRate = item.Rating;
+                                for (int i = 0; i < iRate; i++)
+                                {
+                                    <span style="color: #f8bd08;">&#x2605;</span>
+                                }
+
+                                for (int i = 0; i < 5 - iRate; i++)
+                                {
+                                    <span>&#x2605;</span>
+                                }
+                            }
+                        </p>
+                        <p class="comments">
+                            @Html.DisplayFor(modelItem => item.Comments)
+                        </p>
+                        <p class="review">
+                            Review by <strong>@Html.DisplayFor(modelItem => item.Name)</strong> on <strong>@Html.DisplayFor(modelItem => item.Date)</strong>
+                        </p>
+                        @{
+                            if (User.IsInRole("Manager") || User.IsInRole("User"))
+                            {
+                                <div class="row user-buttons">
+                                    <div class="col-md-10">
+                                        <a asp-controller="Reviews" asp-action="Details" asp-route-id="@item.Id" class="btn btn-default">Details</a>
+                                        <a asp-action="Agree" asp-route-id="@item.Agree" class="breview btn btn-r bgreen">Agree (@item.Agree)</a>
+                                        <a asp-action="Disagree" asp-route-id="@item.Disagree" class="breview btn btn-r bred">Disagree (@item.Disagree)</a>
+                                    </div>
+                                    @if (User.IsInRole("Manager"))
+                                    {
+                                        <div class="col-md-2">
+                                            <a asp-controller="Reviews" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-default">Edit</a>
+                                            <a asp-controller="Reviews" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-default">Delete</a>
+                                        </div>
+                                    }
+                                </div>
+                            }
+                        }
+                    </li>
+                                index++;
+                            }
+            }
+        </ul>
+    </section><!-- /#reviews -->
+</section><!-- /.inner-content -->

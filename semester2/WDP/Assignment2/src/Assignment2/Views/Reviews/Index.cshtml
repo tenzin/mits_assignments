@@ -1,0 +1,55 @@
+@model IEnumerable<Assignment2.Models.Reviews>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<br />
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<div class="row hidden-xs hidden-sm" style="margin-bottom:10px;">
+    <div class="col-md-1"><strong>@Html.DisplayNameFor(model => model.Heading)</strong></div>
+    <div class="col-md-1"><strong>@Html.DisplayNameFor(model => model.Date)</strong></div>
+    <div class="col-md-2"><strong>@Html.DisplayNameFor(model => model.Name)</strong></div>
+    <div class="col-md-2"><strong>Restaurant</strong></div>
+    <div class="col-md-2"><strong>@Html.DisplayNameFor(model => model.Comments)</strong></div>
+    <div class="col-md-1"><strong>@Html.DisplayNameFor(model => model.Rating)</strong></div>
+</div>
+
+@foreach (var item in Model)
+{
+    <hr />
+    <div class="row">
+        <div class="col-md-1">@Html.DisplayFor(modelItem => item.Heading)</div>
+        <div class="col-md-1">@Html.DisplayFor(modelItem => item.Date)</div>
+        <div class="col-md-2">@Html.DisplayFor(modelItem => item.Name)</div>
+        <div class="col-md-2">@Html.DisplayFor(modelItem => item.Restaurant)</div>
+        <div class="col-md-2">@Html.DisplayFor(modelItem => item.Comments)</div>
+        <div class="col-md-2">
+            @{int iRate = item.Rating;
+                for (int i = 0; i < iRate; i++)
+                {
+                    <span style="color: #f8bd08;">&#x2605;</span>
+                }
+
+                for (int i = 0; i < 5 - iRate; i++)
+                {
+                    <span>&#x2605;</span>
+                }
+            }
+        </div>
+        <div class="col-md-2">
+            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+            @{
+                if (User.IsInRole("Manager"))
+                {
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit |</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                }
+            }
+        </div>
+    </div>
+                }

@@ -1,0 +1,70 @@
+@model Assignment2.Models.Reviews
+
+@{
+    ViewData["Title"] = "Review Details";
+}
+
+<h2 class="bor">Details</h2>
+
+<section class="row">
+    <div class="col-md-6">
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Heading)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Heading)
+            </dd>
+            <dt>
+                Restaurant
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Restaurant)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Rating)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Rating)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Comments)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Comments)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Date)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Date)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Agree)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Agree)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Disagree)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Disagree)
+            </dd>
+        </dl>
+        @{
+            if (User.IsInRole("Manager"))
+            {
+                <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+            }
+        }
+        | <a asp-area="" asp-controller="Home" asp-action="Reviews">Back to List</a>
+    </div>
+</section>
+

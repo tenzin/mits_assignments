@@ -1,0 +1,109 @@
+﻿@{
+    ViewData["Banner Title"] = "Dishes";
+}
+
+<div class="row" style="margin-bottom: 50px;">
+    <div class="col-md-5 col-md-push-1">
+        <p class="oxygen">A dish for every taste</p>
+        <p>If you've got a hankering for a big bowl of handmade pasta or a delicious, spicy laksa, then look no further.</p>
+        <p>Check out what;s on offer by selecting a dish from the menu below.</p>
+    </div>
+    <div class="col-md-5 col-md-push-1">
+        <div class="col-xs-6">
+            <img class="img-responsive" src="~/images/burger.jpg" />
+        </div>
+        <div class="col-xs-6">
+            <img class="img-responsive" src="~/images/pasta.jpg" />
+        </div>
+    </div>
+</div>
+
+
+<div id="elastic_grid"></div>
+
+<!-- Elastic grid -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+        $(function(){
+            $("#elastic_grid").elastic_grid({
+                'showAllText' : 'All',
+                'grid' : 6,
+                'filterEffect': 'popup',
+                'hoverDirection': true,
+                'hoverDelay': 0,
+                'hoverInverse': false,
+                'expandingSpeed': 500,
+                'expandingHeight': 364,
+                'items' :
+                [
+
+                    {
+                        'title': 'Jamie\'s Italian <hr/> <a class="btn btn-primary">More Details</a>',
+                        'description'   : 'Jamie\'s Italian has so many great dishes, but the handmade pasta is amazing.<br>Check out the sausage paperdelie to have your mind blown.',
+                        'thumbnail'     : ['/images/jamies_thumbnail.jpg'],
+                        'large': ['/images/jamies.jpg'],
+                        'button_list'   :
+                        [
+                            { 'title': 'Visit Website', 'url': 'https://www.jamieoliver.com/italian/australia/restaurants/canberra/', 'new_window': true },
+                        ],
+                        'tags'          : ['Pasta']
+                    },
+                    {
+                        'title': 'Italian and Sons <hr/> <a class="btn btn-primary">More Details</a>',
+                        'description'   : 'A casual Italian trattoria that specialises in wood fired pizzas such as Rucola with Prosciutto di Parma, rucola \& reggiano. Don\'t miss daily changing main dishes of the day such as their wood roast suckling pig, rosemary, garlic, baked baby fennel \& mustard fruits.',
+                        'thumbnail'     : ['/images/is_thumbnail.jpg'],
+                        'large': ['/images/is.jpg'],
+                        'button_list'   :
+                        [
+                            { 'title': 'Visit Website', 'url': 'http://italianandsons.com.au/', 'new_window': true },
+                        ],
+                        'tags'          : ['Pizza']
+                    },
+                    {
+                        'title': 'Blu Ginger <hr/> <a class="btn btn-primary">More Details</a>',
+                        'description': 'At Blu Ginger we use only the freshest locally sourced produce, combined with authentic spices imported directly from the sub-continent, to offer classic, traditional recipes with a modern twist, creating a unique and memorable dining experience for you.',
+                        'thumbnail': ['/images/bluginger_thumbnail.jpg'],
+                        'large'         : ['/images/bluginger.jpg'],
+                        'button_list'   :
+                        [
+                            { 'title': 'Visit Website', 'url': 'http://www.bluginger.com.au/', 'new_window': true },
+                        ],
+                        'tags'          : ['Curry']
+                    },              
+                    {
+                        'title': 'Jewel of India <hr/> <a class="btn btn-primary">More Details</a>',
+                        'description': 'India is synonymous with curries. They have such a range of different flavoured, coloured and spicy curries. So much to try!',
+                        'thumbnail': ['/images/jewel_thumbnail.jpg'],
+                        'large'         : ['/images/jewel.jpg'],
+                        'button_list'   :
+                        [
+                            { 'title': 'Visit Website', 'url': 'http://www.jewelofindia.com.au/', 'new_window': true },
+                        ],
+                        'tags'          : ['Curry']
+                    },
+                    {
+                        'title': 'Chairman & Yip <hr/> <a class="btn btn-primary">More Details</a>',
+                        'description': 'The Chairman & Yip has become one of Canberra’s longest standing and most highly regarded institutions, having received numerous awards over the years, offering an ever consistent and professional quality of service for corporate dining, conferences and presentations.',
+                        'thumbnail': ['/images/chairman_yip_thumbnail.jpg'],
+                        'large'         : ['/images/chairman_yip.jpg'],
+                        'button_list'   :
+                        [
+                            { 'title': 'Visit Website', 'url': 'http://chairmangroup.com.au/chairmanyip/', 'new_window': true },
+                        ],
+                        'tags'          : ['Dumplings']
+                    },
+                    {
+                        'title': 'Dickson Asian Noodle House <hr/> <a class="btn btn-primary">More Details</a>',
+                        'description': 'The Dickson Asian Noodle House specialises in traditional Malaysian, Thai and Lao cuisine. The dining atmosphere is causal and cosy providing for a la carte dining, banquets and take away',
+                        'thumbnail': ['/images/dickson_noodle_thumbnail.jpg'],
+                        'large'         : ['/image/dickson_noodle.jpg'],
+                        'button_list'   :
+                        [
+                            { 'title': 'Visit Website', 'url': 'https://www.facebook.com/pages/Dickson-Asian-Noodle-House/156690017692038', 'new_window': true },
+                        ],
+                        'tags'          : ['Laksa']
+                    },
+                ]
+            });
+        });
+</script>
