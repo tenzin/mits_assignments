@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{5AB9ACA5-7818-480C-A629-2B9E64BCC58D}|Default">
+  <MonoDevelop.Ide.ItemProperties.FivePlaceofInterestinCanberra PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FivePlaceofInterestinCanberra/Views/Home/WarMemorial.cshtml">
+    <Files>
+      <File FileName="FivePlaceofInterestinCanberra/Views/Shared/_Layout.cshtml" Line="39" Column="61" />
+      <File FileName="FivePlaceofInterestinCanberra/Views/Home/CanberraZoo.cshtml" Line="66" Column="11" />
+      <File FileName="FivePlaceofInterestinCanberra/Views/Home/NationalArboretum.cshtml" Line="15" Column="5" />
+      <File FileName="FivePlaceofInterestinCanberra/Views/Home/ParliamentHouse.cshtml" Line="47" Column="44" />
+      <File FileName="FivePlaceofInterestinCanberra/Views/Home/TelstraTower.cshtml" Line="48" Column="44" />
+      <File FileName="FivePlaceofInterestinCanberra/Views/Home/WarMemorial.cshtml" Line="10" Column="28" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

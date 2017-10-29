@@ -1,0 +1,86 @@
+﻿<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB5eTBtG6z_SbTYEkq29o1uBSLsgUfcXWM"></script>
+<br />
+<div class="row">
+    <div class="col-md-7">
+        <img src="~/images/5p/img/National_Arboretum/n1.png" style="height:100%; width:100%;"/>
+        <br />
+    </div>
+    <div class="col-md-5">
+        <p class="niconne">National Arboretum</p>
+        <p style="font-size:17px">The National Arboretum Canberra is a 250-hectare (618 acre) arboretum in Canberra, the national capital of Australia, created after the area was burned out as a result of the Christmas 2001 and 2003 Canberra bushfires. The Himalayan Cedar forest lost about one third of its trees, and the commercial Radiata Pine plantation was burned out, allowing the arboretum to be created.</p>
+		<p style="font-size:17px">Notable plantings at the Arboretum include, California fan palm, Chinese tulip tree, Western old white gum, Yoshino cherry, Maidenhair tree, Judas tree, Giant redwood, Camden white gum, Chinese rubber tree, Horse chestnut, Monkey puzzle tree, Bunya pine, Weeping Snow Gum, Wollemi pine and Illawarra flame tree.</p>
+    </div>
+</div>
+<br />
+<hr>
+<div class="row">
+    <div class="col-md-6">
+        <p><b>Comments</b></p>
+        <form action="#">
+            <textarea name="message" rows="12" cols="200"></textarea>
+            <br />
+            <input type="submit">
+        </form>
+    </div>
+    <div class="col-md-6">
+    <p><b>Location</b></p>
+        <script>
+
+
+                var map;
+            var canberraCentre = new google.maps.LatLng(-35.287885, 149.0670813);
+                function initMap() {
+                    var canberraMap = {
+                        center: canberraCentre,
+                        zoom: 15,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
+
+                    map = new google.maps.Map(
+                        document.getElementById("googleMap"), canberraMap);
+                }
+
+                google.maps.event.addDomListener(window, 'load', initMap);
+        </script>
+
+
+        <div id="googleMap" style="width:350px;height:250px;"></div>
+
+    </div>
+
+</div>
+<br />
+
+<hr>
+<div class="row">
+    <div class="col-lg-12">
+        <p class="niconne">Photo Gallery</p>
+    </div>
+</div>
+<hr>
+
+<div class="row" style="margin-bottom: 50px; margin-top: 50px;">
+
+    <div class="col-lg-4">
+        <img src="~/images/5p/img/National_Arboretum/n5.png" />
+    </div>
+    <div class="col-lg-4">
+        <img src="~/images/5p/img/National_Arboretum/n6.png" />
+    </div>
+    <div class="col-lg-4">
+        <img src="~/images/5p/img/National_Arboretum/n7.png" />
+
+    </div>
+</div>
+<div class="row" style="margin-bottom: 50px; margin-top: 50px;">
+
+    <div class="col-lg-4">
+        <img src="~/images/5p/img/National_Arboretum/n8.png" />
+    </div>
+    <div class="col-lg-4">
+        <img src="~/images/5p/img/National_Arboretum/n9.png" />
+    </div>
+    <div class="col-lg-4">
+        <img src="~/images/5p/img/National_Arboretum/n11.png" />
+    </div>
+</div>

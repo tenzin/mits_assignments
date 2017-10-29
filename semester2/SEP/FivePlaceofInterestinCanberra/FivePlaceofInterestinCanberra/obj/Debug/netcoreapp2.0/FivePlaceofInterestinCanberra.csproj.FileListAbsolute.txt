@@ -1,0 +1,12 @@
+/Users/tenzin/Desktop/new/FivePlaceofInterestinCanberra/FivePlaceofInterestinCanberra/bin/Debug/netcoreapp2.0/libe_sqlite3.dylib
+/Users/tenzin/Desktop/new/FivePlaceofInterestinCanberra/FivePlaceofInterestinCanberra/bin/Debug/netcoreapp2.0/FivePlaceofInterestinCanberra.deps.json
+/Users/tenzin/Desktop/new/FivePlaceofInterestinCanberra/FivePlaceofInterestinCanberra/bin/Debug/netcoreapp2.0/FivePlaceofInterestinCanberra.runtimeconfig.json
+/Users/tenzin/Desktop/new/FivePlaceofInterestinCanberra/FivePlaceofInterestinCanberra/bin/Debug/netcoreapp2.0/FivePlaceofInterestinCanberra.runtimeconfig.dev.json
+/Users/tenzin/Desktop/new/FivePlaceofInterestinCanberra/FivePlaceofInterestinCanberra/bin/Debug/netcoreapp2.0/FivePlaceofInterestinCanberra.dll
+/Users/tenzin/Desktop/new/FivePlaceofInterestinCanberra/FivePlaceofInterestinCanberra/bin/Debug/netcoreapp2.0/FivePlaceofInterestinCanberra.pdb
+/Users/tenzin/Desktop/new/FivePlaceofInterestinCanberra/FivePlaceofInterestinCanberra/obj/Debug/netcoreapp2.0/FivePlaceofInterestinCanberra.csprojResolveAssemblyReference.cache
+/Users/tenzin/Desktop/new/FivePlaceofInterestinCanberra/FivePlaceofInterestinCanberra/obj/Debug/netcoreapp2.0/FivePlaceofInterestinCanberra.csproj.CoreCompileInputs.cache
+/Users/tenzin/Desktop/new/FivePlaceofInterestinCanberra/FivePlaceofInterestinCanberra/obj/Debug/netcoreapp2.0/FivePlaceofInterestinCanberra.AssemblyInfoInputs.cache
+/Users/tenzin/Desktop/new/FivePlaceofInterestinCanberra/FivePlaceofInterestinCanberra/obj/Debug/netcoreapp2.0/FivePlaceofInterestinCanberra.AssemblyInfo.cs
+/Users/tenzin/Desktop/new/FivePlaceofInterestinCanberra/FivePlaceofInterestinCanberra/obj/Debug/netcoreapp2.0/FivePlaceofInterestinCanberra.dll
+/Users/tenzin/Desktop/new/FivePlaceofInterestinCanberra/FivePlaceofInterestinCanberra/obj/Debug/netcoreapp2.0/FivePlaceofInterestinCanberra.pdb

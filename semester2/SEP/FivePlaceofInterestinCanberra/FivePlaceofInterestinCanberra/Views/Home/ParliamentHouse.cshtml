@@ -1,0 +1,86 @@
+﻿<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB5eTBtG6z_SbTYEkq29o1uBSLsgUfcXWM"></script>
+<br />
+<div class="row">
+    <div class="col-md-7">
+        <img src="~/images/5p/img/Parliament_house/p1.png" style="height:100%; width:100%;"/>
+        <br />
+    </div>
+    <div class="col-md-5">
+        <p class="niconne">Parliament House</p>
+        <p style="font-size:17px">Parliament House is the meeting place of the Parliament of Australia, located in Canberra, the capital of Australia. The building was designed by Mitchell/Giurgola & Thorp Architects and opened on 9 May 1988 by Elizabeth II, Queen of Australia. It cost more than A$1.1 billion to build.</p>
+		<p style="font-size:17px">Parliament House contains 4,700 rooms, and many areas are open to the public. The main foyer contains a marble staircase and leads to the Great Hall, which has a large tapestry on display. The House of Representatives chamber is decorated green, while the Senate chamber has a red colour scheme. Between the two chambers is the Members' Hall, which has a water feature and is not open to the public. The Ministerial Wing houses the office of the prime minister and other ministers.</p>
+    </div>
+</div>
+<br />
+<hr>
+<div class="row">
+    <div class="col-md-6">
+        <p><b>Comments</b></p>
+        <form action="#">
+            <textarea name="message" rows="12" cols="200"></textarea>
+            <br />
+            <input type="submit">
+        </form>
+    </div>
+    <div class="col-md-6">
+    <p><b>Location</b></p>
+        <script>
+
+
+                var map;
+            var canberraCentre = new google.maps.LatLng(-35.3082193, 149.1222036);
+                function initMap() {
+                    var canberraMap = {
+                        center: canberraCentre,
+                        zoom: 15,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
+
+                    map = new google.maps.Map(
+                        document.getElementById("googleMap"), canberraMap);
+                }
+
+                google.maps.event.addDomListener(window, 'load', initMap);
+        </script>
+
+
+        <div id="googleMap" style="width:350px;height:250px;"></div>
+
+    </div>
+
+</div>
+<br />
+
+<hr>
+<div class="row">
+    <div class="col-lg-12">
+        <p class="niconne">Photo Gallery</p>
+    </div>
+</div>
+<hr>
+
+<div class="row" style="margin-bottom: 50px; margin-top: 50px;">
+
+    <div class="col-lg-4">
+        <img src="~/images/5p/img/Parliament_house/p3.png" />
+    </div>
+    <div class="col-lg-4">
+        <img src="~/images/5p/img/Parliament_house/p4.png" />
+    </div>
+    <div class="col-lg-4">
+        <img src="~/images/5p/img/Parliament_house/p5.png" />
+
+    </div>
+</div>
+<div class="row" style="margin-bottom: 50px; margin-top: 50px;">
+
+    <div class="col-lg-4">
+        <img src="~/images/5p/img/Parliament_house/p10.png" />
+    </div>
+    <div class="col-lg-4">
+        <img src="~/images/5p/img/Parliament_house/p11.png" />
+    </div>
+    <div class="col-lg-4">
+        <img src="~/images/5p/img/Parliament_house/p12.png" />
+    </div>
+</div>

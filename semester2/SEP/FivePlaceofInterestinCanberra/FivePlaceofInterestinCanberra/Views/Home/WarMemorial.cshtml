@@ -1,0 +1,89 @@
+﻿<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB5eTBtG6z_SbTYEkq29o1uBSLsgUfcXWM"></script>
+<br />
+<div class="row">
+    <div class="col-md-7">
+      <img src="~/images/5p/img/war_memorial/w2.jpg" style="height:100%; width:100%;">
+        <br />
+    </div>
+    <div class="col-md-5">
+        <p class="niconne">War Memorial</p>
+		<p style="font-size:17px">The Australian War Memorial is Australia's national memorial to the members of its armed forces and supporting organisations who have died or participated in wars involving the Commonwealth of Australia. The memorial includes an extensive national military museum. The Australian War Memorial was opened in 1941, and is widely regarded as one of the most significant memorials of its type in the world.</p>
+        <p style="font-size:17px">The Australian War Memorial combines a shrine, a world-class museum, and an extensive archive. The Memorial's purpose is to commemorate the sacrifice of those Australians who have died in war. Its mission is to assist Australians to remember, interpret and understand the Australian experience of war and its enduring impact on Australian society.</p>
+    </div>
+</div>
+<br />
+<hr>
+<div class="row">
+    <div class="col-md-6">
+        <p><b>Comments</b></p>
+        <form action="#">
+            <textarea name="message" rows="12" cols="200"></textarea>
+            <br/>
+            <input type="submit">
+        </form>
+    </div>
+    <div class="col-md-6">
+        <p><b>Location</b></p>
+            <script>
+                
+                  
+                var map;
+                var canberraCentre = new google.maps.LatLng(-35.2811311, 149.146244);
+                function initMap() {
+                    var canberraMap = {
+                        center: canberraCentre,
+                        zoom: 15,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
+
+                    map = new google.maps.Map(
+                        document.getElementById("googleMap"), canberraMap);
+                }
+
+                google.maps.event.addDomListener(window, 'load', initMap);
+            </script>
+
+           
+            <div id="googleMap" style="width:350px;height:250px;"></div>
+
+        </div>
+       
+    </div>
+<br />
+
+<hr>
+<div class="row">
+    <div class="col-lg-12">
+        <p class="niconne">Photo Gallery</p>
+    </div>
+</div>
+<hr>
+
+<div class="row" style="margin-bottom: 50px; margin-top: 50px;">
+
+    <div class="col-lg-4">
+        <img src="~/images/5p/img/war_memorial/w3.jpg" />
+    </div>
+    <div class="col-lg-4">
+        <img src="~/images/5p/img/war_memorial/w4.png" />
+    </div>
+    <div class="col-lg-4">
+        <img src="~/images/5p/img/war_memorial/w5.png" />
+
+    </div>
+</div>
+<div class="row" style="margin-bottom: 50px; margin-top: 50px;">
+
+    <div class="col-lg-4">
+        <img src="~/images/5p/img/war_memorial/w6.png" />
+    </div>
+    <div class="col-lg-4">
+        <img src="~/images/5p/img/war_memorial/w7.png" />
+    </div>
+    <div class="col-lg-4">
+        <img src="~/images/5p/img/war_memorial/w9.png" />
+    </div>
+</div>
+
+<br />
+
