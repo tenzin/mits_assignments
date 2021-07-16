@@ -1,0 +1,19 @@
+
+3/12/20 6:00 Start vehicle rollout of Hawk-9 on pad LC40 for SYH172
+3/12/20 7:00 Fuel rocket with LOX for SYH172
+3/12/20 8:00 Fuel rocket with RP1 for SYH172
+3/12/20 10:00 Nitrogen flush SYH172
+3/12/20 10:50 GO/NOGO for launch SYH172
+3/12/20 11:00 Launch SYH172 for CLINTY
+
+21/12/20 6:00 Start vehicle rollout of Hawk-9 on pad LC40 for SYH182
+21/12/20 7:00 Fuel rocket with LOX for SYH182
+21/12/20 8:00 Fuel rocket with RP1 for SYH182
+21/12/20 10:50 GO/NOGO for launch SYH182
+21/12/20 11:00 Launch SYH182 for DAVIE Launch 62xx
+
+21/12/20 11:30 Start vehicle rollout of Hawk Heavy on pad KSC for SYHH19
+21/12/20 12:30 Fuel rocket with LOX for SYHH19
+21/12/20 14:00 Fuel rocket with RP1 for SYHH19
+21/12/20 15:30 GO/NOGO for launch SYHH19
+21/12/20 15:40 Launch SYHH19 for SHANEY Space Cassino

@@ -28886,10 +28886,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tenzin/Desktop/new/FivePlaceofInterestinCanberra/FivePlaceofInterestinCanberra/FivePlaceofInterestinCanberra.csproj",
+      "projectUniqueName": "/Users/tenzin/Documents/mits_assignments/semester2/SEP/FivePlaceofInterestinCanberra/FivePlaceofInterestinCanberra/FivePlaceofInterestinCanberra.csproj",
       "projectName": "FivePlaceofInterestinCanberra",
-      "projectPath": "/Users/tenzin/Desktop/new/FivePlaceofInterestinCanberra/FivePlaceofInterestinCanberra/FivePlaceofInterestinCanberra.csproj",
-      "outputPath": "/Users/tenzin/Desktop/new/FivePlaceofInterestinCanberra/FivePlaceofInterestinCanberra/obj",
+      "projectPath": "/Users/tenzin/Documents/mits_assignments/semester2/SEP/FivePlaceofInterestinCanberra/FivePlaceofInterestinCanberra/FivePlaceofInterestinCanberra.csproj",
+      "outputPath": "/Users/tenzin/Documents/mits_assignments/semester2/SEP/FivePlaceofInterestinCanberra/FivePlaceofInterestinCanberra/obj",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp2.0"
